@@ -1,59 +1,66 @@
 .calculator {
     display: flex;
+    flex: 1 0 auto;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 400px;
-    height: 600px;
-    border: 5px solid black;
+    width: 600px;
+    height: 400px;
+    border: 2px solid black;
 }
 
 #display {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
+    width: 600px;
     height: 50px;
-    border: 3px solid black;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 2px solid black;
 }
 
 #numpad {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 350px;
-    height: 500px;
-    border: 3px solid black;
-}
-
-#numpad-left {
-    width: 250px;
-    height: 450px;
-    border: 3px solid black;
-}
-
-#operators {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80px;
-    height: 450px;
-    border: 3px solid black;
-}
-
-.opbtn {
-    width: 40px;
-    height: 40px;
 }
 
 #keys {
+    width: 500px;
+    height: 350px;
+}
+
+#operators {
+    width: 100px;
+    height: 350px;
+    border-left: 2px solid black;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.keybtn {
-    width: 40px;
+
+#clear {
+    width: 500px;
+    height: 50px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#numbers {
+    width: 500px;
+    height: 250px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+#zero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 80px;
     height: 40px;
 }
